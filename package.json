@@ -1,0 +1,36 @@
+{
+    "name": "@colonise/dom",
+    "version": "0.0.0",
+    "description": "A simple TypeScript library for virtual amd direct DOM manipulation",
+    "main": "index.js",
+    "typings": "index.d.ts",
+    "files": [
+        "**/*.*"
+    ],
+    "scripts": {
+        "build": "gulp build",
+        "lint": "gulp lint",
+        "test": "gulp test",
+        "coverage": "gulp coverage",
+        "debug": "gulp debug",
+        "distribute": "gulp distribute",
+        "postpublish": "gulp publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Colonise/DOM.git"
+    },
+    "keywords": [],
+    "author": "Patrick Stanford",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Colonise/DOM/issues"
+    },
+    "homepage": "https://github.com/Colonise/DOM#readme",
+    "devDependencies": {
+        "@colonise/config": "^2.11.4"
+    },
+    "dependencies": {
+        "tslib": "^1.9.3"
+    }
+}

@@ -1,0 +1,17 @@
+# Source
+source/
+
+# Build
+build/
+gulpfile.ts
+tslint.json
+tsconfig.json
+
+# Test
+coverage/
+
+# Documentation
+documentation/
+
+# VSCode Settings
+.vscode/
