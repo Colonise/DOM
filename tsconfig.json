@@ -1,3 +1,8 @@
 {
-    "extends": "@colonise/config/tsconfig"
+    "extends": "@colonise/config/tsconfig",
+    "compilerOptions": {
+        "lib": [
+            "dom"
+        ]
+    }
 }
