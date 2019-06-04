@@ -28,7 +28,7 @@
     },
     "homepage": "https://github.com/Colonise/DOM#readme",
     "devDependencies": {
-        "@colonise/config": "^2.11.4"
+        "@colonise/config": "^2.12.0"
     },
     "dependencies": {
         "tslib": "^1.9.3"
