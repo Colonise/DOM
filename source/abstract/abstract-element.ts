@@ -1,14 +1,25 @@
+import { createElement, FindHTMLElement, HTMLElementTagNames } from '../elements';
+import { AbstractBase } from './abstract-base';
 import { AbstractNode } from './abstract-node';
 import { NodeType } from './node-type.enum';
 
-type HTMLElementTagNames = keyof HTMLElementTagNameMap;
-type FindHTMLElement<TTagName extends string | keyof HTMLElementTagNameMap>
-    = TTagName extends keyof HTMLElementTagNameMap ? HTMLElementTagNameMap[TTagName] : HTMLElement;
+export class AbstractElement<
+    TTagName extends HTMLElementTagNames | string,
+    THTMLElement extends HTMLElement = FindHTMLElement<TTagName>
+    >
+    extends AbstractNode<NodeType.ELEMENT_NODE>
+    implements AbstractBase<THTMLElement> {
 
-export class AbstractElement<TTagName extends HTMLElementTagNames | string = string> extends AbstractNode {
-    public readonly actual: FindHTMLElement<TTagName> | undefined;
+    public readonly actual: THTMLElement | undefined;
+    protected _actual: THTMLElement | undefined;
 
-    public constructor(public readonly tagName: TTagName) {
+    public constructor(public readonly tagName: TTagName, public readonly options?: ElementCreationOptions) {
         super(NodeType.ELEMENT_NODE);
+    }
+
+    public create(): THTMLElement {
+        this._actual = <THTMLElement>createElement(this.tagName, this.options);
+
+        return this._actual;
     }
 }

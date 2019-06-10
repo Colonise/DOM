@@ -1,6 +1,8 @@
 export const constants = {
     document,
-    window
+    window,
+    EventTarget,
+    Node
 };
 
 export default constants;

@@ -4,4 +4,6 @@ export abstract class AbstractBase<TAbstract> {
     public get actual(): TAbstract | undefined {
         return this._actual;
     }
+
+    protected abstract create(): TAbstract;
 }

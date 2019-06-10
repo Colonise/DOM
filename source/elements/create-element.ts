@@ -1,14 +1,16 @@
 import constants from '../constants';
+import { FindHTMLElement } from './find-html-element';
+import { HTMLElementTagNames } from './html-element-tag-names';
 
 /**
  * Creates an instance of the element for the specified tag.
  *
  * @param tagName The name of an element.
  */
-export function createElement<TTagName extends keyof HTMLElementTagNameMap>(
+export function createElement<TTagName extends HTMLElementTagNames>(
     tagName: TTagName,
     options?: ElementCreationOptions
-): HTMLElementTagNameMap[TTagName];
+): FindHTMLElement<TTagName>;
 /**
  * Creates an instance of the element for the specified tag.
  *
