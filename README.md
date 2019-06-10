@@ -8,7 +8,7 @@
 [![npm bundle size \(minified\)][npm-minified-badge]][npm-minified-url]
 [![npm bundle size \(minified, zipped\)][npm-minified-minzipped-badge]][npm-minified-minzipped-url]
 
-> A simple TypeScript library for virtual amd direct DOM manipulation.
+> A simple TypeScript library for DOM manipulation.
 
 ### Overview
 

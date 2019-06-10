@@ -1,7 +1,7 @@
+import { AbstractEventTarget } from './abstract-event-target';
 import { NodeType } from './node-type.enum';
-import { VirtualEventTarget } from './virtual-event-target';
 
-export class VirtualNode extends VirtualEventTarget {
+export class AbstractNode extends AbstractEventTarget {
     public readonly actual: Node | undefined;
 
     public get nodeType(): NodeType {

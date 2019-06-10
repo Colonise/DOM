@@ -1,7 +1,7 @@
 {
     "name": "@colonise/dom",
     "version": "0.0.0",
-    "description": "A simple TypeScript library for virtual amd direct DOM manipulation",
+    "description": "A simple TypeScript library for DOM manipulation",
     "main": "index.js",
     "typings": "index.d.ts",
     "files": [
